@@ -14,7 +14,7 @@ const userCtrl = {};
 var obj = [];
 
 
-
+// metodo para conectar con API que carga la BD
 userCtrl.pruebas = (req , res) =>{
     // request que se dirige a la api que devuelve el JSON
     request.get({url:'https://hn.algolia.com/api/v1/search_by_date?query=nodejs', json:true}, function(err, res, json){
@@ -43,7 +43,6 @@ userCtrl.pruebas = (req , res) =>{
     
             // Busca y compara si el ide de los usuarios devueltos por la API ya estan en la BD
               User.findOne({story_id :  user.story_id }, (err, _user) =>{
-                  console.log('11111111111');
                 try{
                   if (!_user) {
                     // si el usuario no esta entonces lo guarda en la BD TEST

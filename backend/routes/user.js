@@ -21,7 +21,6 @@ api.get('/', (req, res) => {
   // ejecuta la carga cada 1 hora, par poder cargar comentar toda esta regio 
   setInterval(function () {
     UserController.pruebas(req, res);
-    console.log('second passed');
   }, 1000 * 60 * 60);
   //#endregion  
 
@@ -31,7 +30,7 @@ api.get('/', (req, res) => {
     } else {
       if (!users) {
         res.status(404).render('index', {
-          message: 'No hay cuidadores'
+          message: 'No hay user'
         });
         console.log('no hay usuarios')
       } else {
