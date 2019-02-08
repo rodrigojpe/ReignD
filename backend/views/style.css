@@ -1,0 +1,50 @@
+table  tbody tr {
+    background-color: #fff;
+    border: 1px #ccc;
+
+}
+
+
+
+
+.author{
+    color:#999;
+}
+.time{
+    color:#333;
+    font-size: 13pt;
+
+}
+table {
+    cursor: pointer;
+}
+
+tbody tr :hover  {
+    background-color: #fafafa;
+    box-shadow: #333;
+}
+
+.color{
+    color: white
+}
+
+table thead .head {
+    background: black;
+    height: 7rem;
+}
+td i{
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.head{
+    font-size: 6rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.head p{
+    font-size: 1.5rem;
+}
