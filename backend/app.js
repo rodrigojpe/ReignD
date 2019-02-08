@@ -35,13 +35,9 @@ app.use((req, res, next)=>{
 
 
 // rutas
-// app.use('/', contactRouter);
-// app.use(express.static(path.join('vivancoBand')));
+
 app.use('/', user_router);
-// app.use('/', album_router);
-// app.use('/', song_router);
-// app.use('/', artist_route);
-// app.use('/', contact);
+
 
 
 
